@@ -1,0 +1,145 @@
+#:kivy 2.1.0
+#:import utils kivy.utils
+
+<MainLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        # head nav
+        BoxLayout:
+            # background_color
+            canvas:
+                Color:
+                    rgba: (180/255, 180/255, 180/255, 1)
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            orientation: "horizontal"
+            size_hint: (1, None)
+            height: 60
+            padding: 20
+
+            Label:  # app name label
+                id: app_name_label
+                text: "lighTag"
+                font_size: 18
+                size_hint: (.4, 1)  # for width, the proportion is relative to half of the parent's width if there are 2 widgets in this horizontal box
+                color: 0,0,0,1
+
+                # set text alignment
+                text_size: self.size
+                halign: 'left'
+                valign: 'middle'
+                
+                # set background_color
+                # canvas.before:
+                #     Color:
+                #         rgba: (122/255, 0, 133/255, 1)
+                #     Rectangle:
+                #         size: self.size
+                #         pos: self.pos
+
+            Label:  # head\nav spaceholder
+                id: head_nav_spaceholder
+                text: ''
+                # canvas.before:
+                #     Color:
+                #         rgba: (50/255, 50/255, 50/255, 1)
+                #     Rectangle:
+                #         size: self.size
+                #         pos: self.pos
+
+            Label:
+                id: floor_label
+                test: 'Floor: detecting..'
+                bold: True
+
+                # set text alignment
+                text_size: self.size
+                halign: 'right'
+                valign: 'middle'
+                color: (0.2, 0.2, 0.2, 1)
+
+            # Button:  # settings btn
+            #     id: settings_btn
+            #     size_hint: (.1, 1)
+            #     background_color: (0, 0, 0, 0)
+
+            #     on_press: root._on_settings_pressed()
+            #     on_release: root._on_settings_released()
+
+            #     Image:
+            #         id: settings_img
+            #         source: "imgs/settings-outline.png"
+            #         center_x: self.parent.center_x
+            #         center_y: self.parent.center_y
+            #         size: self.parent.size
+
+        FloatLayout:  # canvas
+            id: canvas
+            Label:
+                id: canvas_temp_label
+                text: "Canvas"
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                canvas.before:
+                    Color:
+                        rgba: (255/255, 157/255, 0/255, 1)
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+            Label:
+                id: canvas_size_label
+                text: '{:.1f}cm x {:.1f}cm '.format(canvas_temp_label.size[0] * root.CENTIMETER_PER_PIXEL, canvas_temp_label.size[1] * root.CENTIMETER_PER_PIXEL)
+                font_size: 12
+                size_hint: (None, None)
+                size: self.texture_size
+                pos_hint: {'top': 1, 'right': 1}
+                # canvas.before:
+                #     Color:
+                #         rgba: (105/255, 157/255, 110/255, 1)
+                #     Rectangle:
+                #         size: self.size
+                #         pos: self.pos
+
+
+
+
+        BoxLayout:  # control panel
+            id: control_panel
+            orientation: "horizontal"
+            size_hint: (1, None)
+            height: 250
+            
+            BoxLayout:  # left part
+                orientation: "vertical"
+
+                Button:
+                    id: add_AOI_corner_btn
+                    text: "Add AOI corner"
+                    font_size: 18
+                    backgroun_color: utils.get_color_from_hex("#F6F6F6")
+                    on_release: root.add_AOI_corner()
+
+                Label:
+                    id: tag_distance
+                    # text: "Tag distance (m)\n" "base1:  3.78\n" "base2:  0.43\n" "base3:  7.01\n" "base4:  5.26\n"
+                    text: ""
+                    font_size: 17
+
+            BoxLayout:  # right part
+                orientation: "vertical"
+
+                Button:
+                    id: start_plotting_path_btn
+                    text: "START plotting path"
+                    on_release: root.on_plot_path_released()
+
+                Button:
+                    id: debug_btn
+                    text: "AOI Detector"
+                    background_normal: ''
+                    background_color: (0.2, 0.2, 0.2, 1)
+                    on_release: root.debug()
