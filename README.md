@@ -5,7 +5,7 @@ lighTag: An UWB Positioning System Integrated in Lighting System and its Applica
 
 ---
 
-A project supported by [**The Hong Kong Polytechnic University**](https://www.polyu.edu.hk/) and [**MIT Hong Kong Innovation Node**](https://hkinnovationnode.mit.edu/),
+A project supported by [**MIT Hong Kong Innovation Node**](https://hkinnovationnode.mit.edu/) and [**The Hong Kong Polytechnic University**](https://www.polyu.edu.hk/),
 
 made by [Haley Kwok](https://github.com/HaleyKwok), [Mike Zhang](https://github.com/zhangwengyu999) and [Xavier Pan](https://github.com/X3vvv).
 
