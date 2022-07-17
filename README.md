@@ -1,5 +1,5 @@
-# lighTag
-An UWB Positioning System Integrated in Lighting System and its Applications
+# lighTag UWB Project
+lighTag: An UWB Positioning System Integrated in Lighting System and its Applications
 
 <img src="https://github.com/lighTag-UWB/lighTag/blob/main/lighTag_Logo_2.png" width="50%"></img>
 
