@@ -1,6 +1,8 @@
 # lighTag
 An UWB Positioning System Integrated in Lighting System and its Applications
 
+<img src="https://github.com/lighTag-UWB/lighTag/blob/main/lighTag_Logo_2.png" width="50%"></img>
+
 ---
 
 A project supported by [**The Hong Kong Polytechnic University**](https://www.polyu.edu.hk/) and [**MIT Hong Kong Innovation Node**](https://hkinnovationnode.mit.edu/),
