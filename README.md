@@ -17,7 +17,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 # Problem Statements
 - Users cannot easily find their place in a multi-storey mall;
 - Visitor recording during Covid-19 is not smart and detailed;
-- It is not smart to turn off surplus and excessive lighting along the corridors due to the photocell sensors or occupancy sensors canonly detect movement rather than people.
+- It is not smart to turn off surplus and excessive lighting along the corridors due to the photocell sensors or occupancy sensors can only detect movement rather than people.
 
 ---
 
@@ -25,7 +25,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 - Solution to Power Issue: 
   - lighTag integrated with lighting system in the building, UWB bases can receive continuous power;
 - 3D Indoor Positioning: 
-  - with 4 lighTag Base Station, lighTag can get the x,y and z coordinates of the lighTag Tag integrated in user'sdevices;
+  - with 4 lighTag Base Station, lighTag can get the x,y and z coordinates of the lighTag Tag integrated in user's devices;
 - High Accuracy: 
   - lighTag has 5cm ranging accuracy, 10cm 2D accuracy, and 20cm 3D accuracy, which provides an accurate position ofuser;
 - Area of Interest Detection:
@@ -37,9 +37,9 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 - lighTag Base&Tag:
   - Using the BP-TWR-50 UWB Module from [bphero Inc.](http://www.51uwb.cn/) with Two Way Ranging (TWR) distancing algorithm. Based on the [TWR open source firmware from bphero](https://bitbucket.org/tuzhuke/51base_twr_f1/src/master/), we set 4 base stations for the 3D positioning. ESP8266-01S WI-FI Module is used to do the communication between UWB module and the PC via TCP/IP, which sends the distance data from base station to backend program;
 - lighTag Algorithm API:
-  - Using Python to implement the Multilateration Positioning Algorithm, which calculates the coordinates from distance data. The Python library sympy and numpy are used to solve the Euclidean metric to get the coordinates. After the algorithm optimisation, we packaged all functions into Python API for further UI uasge;
+  - Using Python to implement the Multilateration Positioning Algorithm, which calculates the coordinates from distance data. The Python library sympy and numpy are used to solve the Euclidean metric to get the coordinates. After the algorithm optimisation, we packaged all functions into Python API for further UI usage;
 - lighTag User Interface:
-  - The UI is implemented by the Python's Kivy library. The lighTag UI can do the real-time plotting of user's position, add AOI area by the administrator, as well as detect whether user is in the area on not. The Kivy UI can be further packaged intomobile App. The AOI detection is realized by the optimized Ray Method.
+  - The UI is implemented by the Python's Kivy library. The lighTag UI can do the real-time plotting of user's position, add AOI area by the administrator, as well as detect whether user is in the area or not. The Kivy UI can be further packaged into mobile App. The AOI detection is realized by the optimized Ray Method.
 
 ---
 
