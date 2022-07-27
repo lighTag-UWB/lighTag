@@ -15,7 +15,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 ---
 
 # Problem Statements
-- Users can not easily find their place in a multi-storey mall;
+- Users cannot easily find their place in a multi-storey mall;
 - Visitor recording during Covid-19 is not smart and detailed;
 - It is not smart to turn off surplus and excessive lighting along the corridors due to the photocell sensors or occupancy sensors canonly detect movement rather than people.
 
@@ -23,11 +23,11 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 
 # lighTag Features
 - Solution to Power Issue: 
-  - lighTag integrated with lighting system in the building, UBW bases cn receive continuous power;
+  - lighTag integrated with lighting system in the building, UWB bases can receive continuous power;
 - 3D Indoor Positioning: 
   - with 4 lighTag Base Station, lighTag can get the x,y and z coordinates of the lighTag Tag integrated in user'sdevices;
 - High Accuracy: 
-  - lighTag has 5cm ranging accuracy, 10cm 2D accuracy, and 20cm 3D accuracy, which provides a accurate position ofuser;
+  - lighTag has 5cm ranging accuracy, 10cm 2D accuracy, and 20cm 3D accuracy, which provides an accurate position ofuser;
 - Area of Interest Detection:
   - lighTag can detect the presence of user in an specific area inside a building.
 
