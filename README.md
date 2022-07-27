@@ -27,7 +27,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 - 3D Indoor Positioning: 
   - with 4 lighTag Base Station, lighTag can get the x,y and z coordinates of the lighTag Tag integrated in user's devices;
 - High Accuracy: 
-  - lighTag has 5cm ranging accuracy, 10cm 2D accuracy, and 20cm 3D accuracy, which provides an accurate position ofuser;
+  - lighTag has 5cm ranging accuracy, 10cm 2D accuracy, and 20cm 3D accuracy, which provides an accurate user position;
 - Area of Interest Detection:
   - lighTag can detect the presence of user in a specific area inside the building.
 
@@ -46,7 +46,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 # Applications to Problem Statements
 - lighTag can enable 3D Indoor Navigation in shopping mall, airport, and factory with floor number indicated;
 - Working with LeaveHomeSafe App, lighTag can automatically record arrival & leaving, record detailed location information, and measure social distance;
-- lighTag can adjust indoor lights state including ON/OFF and brightness, based on the position and number of people.
+- lighTag can adjust indoor lights status including ON/OFF and brightness, based on the position and number of people.
 
 ---
 
