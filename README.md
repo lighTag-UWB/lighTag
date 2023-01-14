@@ -1,6 +1,7 @@
 # lighTag UWB Project
 **lighTag: A UWB Positioning System Integrated in Lighting System and its Applications**
 
+<html>
 <center>
 <img src="./pic/lighTag_Logo_2.png" width="60%"></img>
 </center>
@@ -8,6 +9,7 @@
 <center>
 <img src="./pic/lighTag_base&tag.png" width="30%"></img>
 </center>
+</html>
 
 ---
 
@@ -43,12 +45,15 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 
 # Project Contents
 
+<html>
 <center>
 <img src="./pic/lighTag_Content.png" width="70%"></img>
 </center>
+</html>
 
 ## 1. Tag & Base
 
+<html>
 <table>
   <tr>
     <td>
@@ -67,10 +72,10 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
     </td>
 </table>
 
-
 <center>
 <img src="./pic/lighTag_Module.png" width="90%"></img>
 </center>
+</html>
 
 - Using the BP-TWR-50 UWB Module from [bphero Inc.](http://www.51uwb.cn/) with Two Way Ranging (TWR) distancing algorithm. Based on the [TWR open source firmware from bphero](https://bitbucket.org/tuzhuke/51base_twr_f1/src/master/), we set 4 base stations for the 3D positioning. ESP8266-01S WI-FI Module is used to do the communication between UWB module and the PC via TCP/IP, which sends the distance data from base station to backend program;
 
@@ -78,6 +83,7 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 
 ## 2. Algorithm API
 
+<html>
 <center>
 <img src="./pic/lighTag_Algo.png" width="90%"></img>
 </center>
@@ -99,13 +105,16 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
     </center>
     </td>
 </table>
+</html>
 
 - Using Python to implement the Multilateration Positioning Algorithm, which calculates the coordinates from distance data. The Python library sympy and numpy are used to solve the Euclidean metric to get the coordinates. After the algorithm optimisation, we packaged all functions into Python API for further UI usage;
+- Source code: [./backend.py](./backend.py)
 
 ---
 
 ## 3. User Interface
 
+<html>
 <table>
   <tr>
     <td>
@@ -123,12 +132,16 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
     </center>
     </td>
 </table>
+</html>
 
 - The UI is implemented by the Python's Kivy library. The lighTag UI can do the real-time plotting of user's position, add Area of Interest (AOI) area by the administrator, as well as detect whether user is in the area or not. The Kivy UI can be further packaged into mobile App. The AOI detection is realized by the optimized Ray Method.
+- Source code: [./ui.py](./ui.py)
 
+<html>
 <center>
 <img src="./pic/lighTag_AOI_Algo.png" width="100%"></img>
 </center>
+</html>
 
 ---
 
