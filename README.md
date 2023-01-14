@@ -88,14 +88,14 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
     <center>
     <img src="./pic/Moving_demo.gif" width="100%"></img>
     <br>
-    Moving Demo
+      Moving Simulation
     </center>
     </td>
     <td>
     <center>
     <img src="./pic/AOI_demo.gif" width="100%"></img>
     <br>
-    AOI Detection Demo
+    AOI Detection Simulation
     </center>
     </td>
 </table>
