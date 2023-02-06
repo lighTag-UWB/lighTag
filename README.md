@@ -1,21 +1,11 @@
 # lighTag UWB Project
 **lighTag: A UWB Positioning System Integrated in Lighting System and its Applications**
 
-<html>
-<center>
 <img src="./pic/lighTag_Logo_2.png" width="60%"></img>
-</center>
-
-<center>
-<img src="./pic/lighTag_base&tag.png" width="30%"></img>
-</center>
-</html>
-
----
 
 A project supported by [MIT Hong Kong Innovation Node](https://hkinnovationnode.mit.edu/) and [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/),
 
-made by [Haley Kwok](https://github.com/HaleyKwok), [Mike Zhang](https://github.com/zhangwengyu999) and [Xavier Pan](https://github.com/X3vvv).
+made by [KWOK Hin Chi](https://github.com/HaleyKwok), [PAN Zewen](https://github.com/X3vvv), and [ZHANG Wengyu](https://github.com/zhangwengyu999) from The Hong Kong Polytechnic University. 
 
 
 This project mainly focused on the research of the Ultra-wideband (UWB) technology and Internet of Things as well as their applications.
@@ -152,4 +142,11 @@ This project mainly focused on the research of the Ultra-wideband (UWB) technolo
 
 ---
 
-Copyright © [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), [MIT Hong Kong Innovation Node](https://hkinnovationnode.mit.edu/), [Haley Kwok](https://github.com/HaleyKwok), [Mike Zhang](https://github.com/zhangwengyu999), [Xavier Pan](https://github.com/X3vvv)  All rights reserved.
+# Notice
+
+There is still much room for improvement and research on the lighTag UWB project. Your suggestions and ideas are welcome.  
+Contact: [wengyu.zhang@connect.polyu.hk](mailto:wengyu.zhang@connect.polyu.hk).
+
+---
+
+Copyright © [MIT Hong Kong Innovation Node](https://hkinnovationnode.mit.edu/), [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), [KWOK Hin Chi](https://github.com/HaleyKwok), [PAN Zewen](https://github.com/X3vvv), [ZHANG Wengyu](https://github.com/zhangwengyu999)  All rights reserved.
